@@ -1,0 +1,71 @@
+﻿<link rel="stylesheet" href="~/css/LogedStyle.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/vrsek.css" asp-append-version="true" />
+
+@if (ViewBag.Admin == 1)
+{
+    <div id="container">
+        <img src="/css/Planky/Farplan balkon (1).jpg" class="planek">
+        <div class="pravyPanel">
+            <div class="nadpis">
+                <h1>Stoly - 1. patro</h1>
+                <h2>@ViewBag.TextVolne @ViewBag.volnychMistCelkem @ViewBag.Text z @ViewBag.mistCelkem</h2>
+            </div>
+            <div class="ButtonyContainer">
+                @foreach (Stul stul in ViewBag.listStoly)
+                {
+                    @if(stul.ZbyvajiciMista == 0)
+                    {
+                        <a class="stul" asp-controller="Rezervace" asp-action="StulDetail" asp-route-IDStolu="@stul.ID_Stul" style="background: red; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></a>
+                    }
+                    else if(stul.ZbyvajiciMista == stul.PocetMist)
+                    {
+                        <a class="stul" asp-controller="Rezervace" asp-action="StulDetail" asp-route-IDStolu="@stul.ID_Stul" style="background: green; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></a>
+                    }
+                    else
+                    {
+                        <a class="stul" asp-controller="Rezervace" asp-action="StulDetail" asp-route-IDStolu="@stul.ID_Stul" style="background: orange; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></a>
+                    }
+                }
+            </div>
+            <div class="VyberPodlazi">
+                <a class="VyberButton" asp-controller="Rezervace" asp-action="Prizemi">Přízemí</a>
+                <a class="VyberButton" asp-controller="Rezervace" asp-action="Balkon">1. patro</a>
+                <a class="VyberButton" asp-action="ExportPeopleInExcel">Exportovat</a>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div id="container">
+        <img src="/css/Planky/Farplan balkon (1).jpg" class="planek">
+        <div class="pravyPanel">
+            <div class="nadpis">
+                <h1>Stoly - 1. patro</h1>
+                <h2>@ViewBag.TextVolne @ViewBag.volnychMistCelkem @ViewBag.Text z @ViewBag.mistCelkem</h2>
+            </div>
+            <div class="ButtonyContainer">
+                @foreach (Stul stul in ViewBag.listStoly)
+                {
+                   
+                    @if (stul.ZbyvajiciMista == 0)
+                    {
+                        <div class="stul" style="background: red; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></div>
+                    }
+                    else if (stul.ZbyvajiciMista == stul.PocetMist)
+                    {
+                        <div class="stul" style="background: green; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></div>
+                    }
+                    else
+                    {
+                        <div class="stul" style="background: orange; color: white;"><bold>Stůl: @stul.ID_Stul</bold> <span>(@stul.ZbyvajiciMista z @stul.PocetMist)</span></div>
+                    }
+                }
+            </div>
+            <div class="VyberPodlazi">
+                <a class="VyberButton" asp-controller="Rezervace" asp-action="Prizemi">Přízemí</a>
+                <a class="VyberButton" asp-controller="Rezervace" asp-action="Balkon">1. patro</a>
+            </div>
+        </div>
+    </div>
+}

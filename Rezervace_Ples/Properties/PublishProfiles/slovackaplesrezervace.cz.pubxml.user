@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Tento soubor je používán procesem publikování nebo balení webového projektu. Chování tohoto procesu můžete přizpůsobit
+úpravou tohoto souboru MSBuild. Další informace o tomto procesu najdete na webu https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGo9TUa5wcUeGfM20fSSJ5AAAAAACAAAAAAAQZgAAAAEAACAAAADH2BvIyKVaQp+mYLIZCnB9CpzQ+gpNUCMLz1VoihLUcgAAAAAOgAAAAAIAACAAAAAryuusk9riLXfeiUSXIQPsJq+5qzlD6yACdsQS1l9ehyAAAADWBMs7voH3o5hYj5BvZHR+GZvbRp6AeBXCUCsEKrTmFEAAAABWwgWWmLnSfuiuJX3dha/Hau+/ppR2+H1I44DNQ6Xbp/0cIavAG3g7pkoHwdRSeaKNNZIeTx3URJuhAT5+a2GE</EncryptedPassword>
+    <History>True|2024-04-23T10:08:36.9614262Z;False|2024-04-23T12:08:15.2117751+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

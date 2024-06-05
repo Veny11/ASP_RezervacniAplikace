@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Rezervace_Ples</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Rezervace_Ples.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <img src="/css/loga/skola.png" id="logo">
+        <h1>Slovácká - Ples 2024</h1>
+        <img src="/css/loga/tanec.png" id="tanec">
+
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <h6 class="crdts">Made by Dominik Venos</h6>
+        <a class="odhlasitSe button" asp-action="Logout" asp-controller="Home">Odhlásit se</a>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

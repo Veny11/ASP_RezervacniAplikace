@@ -1,0 +1,18 @@
+﻿@model User;
+
+<link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+<div class="container">
+    <form method="post" asp-action="@ViewBag.Target">
+        <h2>Login</h2>
+        <input type="text" class="form-control" id="userName" asp-for="Prihlasovaci_Jmeno" placeholder="Přihlašovací jméno" required>
+        <input type="password" class="form-control" id="password" asp-for="Heslo" placeholder="Heslo" required>
+        <button type="submit" class="btn btn-primary">Přihlásit se</button>
+
+    </form>
+    @if (ViewBag.ErrorMessage != null)
+    {
+        <p class="text-danger">@ViewBag.ErrorMessage</p>
+    }
+</div>
+

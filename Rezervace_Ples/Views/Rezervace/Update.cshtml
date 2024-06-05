@@ -1,0 +1,20 @@
+﻿@model Lidi;
+
+<link rel="stylesheet" href="~/css/createUpdate.css" asp-append-version="true" />
+
+<div class="formContainer">
+    <form asp-action="@ViewBag.Target" method="post">
+        <label asp-for="Name">
+            Jméno: <input asp-for="Name" type="text">
+        </label>
+
+        <label asp-for="Surname">
+            Přijmení: <input asp-for="Surname" type="text">
+        </label>
+
+        <div id="buttony">
+            <button type="submit" asp-route-IDStolu="@ViewBag.IDStolu" asp-route-id="@ViewBag.id">Uložit</button>
+            <a class="acko" asp-controller="Rezervace" asp-action="Zrusit" asp-route-IDStolu="@ViewBag.IDStolu">Zrušit</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,50 @@
+h2 {
+    margin: unset;
+    text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.58);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.text-danger{
+    color: red;
+    font-weight: 800;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    background: darkslateblue;
+    border-radius: 10px;
+    color: white;
+}
+
+input {
+    height: 30px;
+    border: solid gray 1px;
+    border-radius: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px gray;
+    color: gray;
+}
+
+button:hover {
+    color: darkslateblue;
+    border-color: darkslateblue;
+}
+

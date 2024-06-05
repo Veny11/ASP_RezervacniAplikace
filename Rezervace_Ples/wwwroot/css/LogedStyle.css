@@ -1,0 +1,122 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.planek {
+    background-color: gray;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.ButtonyContainer {
+    height: auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 15px;
+    padding: 20px;
+}
+
+.stul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 100px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    gap: 5px;
+    border: solid darkslateblue 2px;
+    border-radius: 10px;
+}
+.stul:hover{
+    border: solid white 2px;
+}
+h1, h2 {
+    margin: unset;
+}
+
+.pravyPanel {
+    display: flex;
+    flex-direction: column;
+    background: darkslateblue;
+    border-radius: 10px;
+    margin: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+}
+
+#containerNabidka {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nabidka {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: darkslateblue;
+    border-radius: 10px;
+    color: white;
+    margin-top: 50px
+}
+
+a:-webkit-any-link {
+    color: #181818;
+    text-decoration: none;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.VyberPodlazi {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nadpis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+a.odhlasitSe {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px; 
+}
+
+span{
+    font-size: 12px;
+}
+
+a.VyberButton {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px gray;
+    color: gray;
+}
+
+a.VyberButton:hover {
+    color: darkslateblue;
+    border-color: darkslateblue;
+}

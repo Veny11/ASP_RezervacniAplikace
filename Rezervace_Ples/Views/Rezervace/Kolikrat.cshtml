@@ -1,0 +1,13 @@
+﻿@model KolikratNovyClovekModel;
+<link rel="stylesheet" href="~/css/Kolikrat.css" asp-append-version="true" />
+
+<div class="formContainer">
+    <form asp-controller="Rezervace" asp-action="Kolikrat" method="post">
+        <label asp-for="KolikratValue">
+            Kolikrát vytvořit záznam: <input asp-for="KolikratValue" type="number" min="1" max="@ViewBag.MaxPocet"/>
+        </label>
+        <div id="buttonCont">
+            <button type="submit" class="btn btn-primary" style="background: green; color: white; border: black;">Potvrdit</button>
+        </div>
+    </form>
+</div>

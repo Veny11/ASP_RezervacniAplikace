@@ -1,0 +1,24 @@
+﻿@model KolikratNovyClovekModel;
+
+<link rel="stylesheet" href="~/css/createUpdate.css" asp-append-version="true" />
+
+<div class="formContainer">
+    <form asp-action="@ViewBag.Target" method="post">
+        <label asp-for="Jmeno">
+            Jméno: <input asp-for="Jmeno" type="text">
+        </label>
+
+        <label asp-for="Prijmeni">
+            Přijmení: <input asp-for="Prijmeni" type="text">
+        </label>
+
+        <label asp-for="KolikratValue">
+            Kolikrát vytvořit záznam: <input asp-for="KolikratValue" type="number" min="1" max="@ViewBag.MaxPocet" />
+        </label>
+
+        <div id="buttony">
+            <button type="submit" asp-route-IDStolu="@ViewBag.id">Uložit</button>
+            <a class="acko" asp-controller="Rezervace" asp-action="Zrusit" asp-route-IDStolu="@ViewBag.id">Zrušit</a>
+        </div>
+    </form>
+</div>

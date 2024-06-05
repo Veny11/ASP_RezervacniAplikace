@@ -1,0 +1,78 @@
+.formContainer {
+    width: 300px; /* Nastavte šíøku kontejneru podle vašich potøeb */
+    margin: auto; /* Zarovnání formuláøe na støed */
+    padding: 20px;
+    background: darkslateblue;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white; /* Pøidáno pro nastavení textu */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Mezera mezi jednotlivými labely */
+    color: white;
+}
+
+input{
+    width: 95%; /* Šíøka textových polí na 100% */
+    padding: 5px; /* Vnitøní odsazení textových polí */
+    margin-top: 3px; /* Mezera nad textovými poli */
+    border-radius: 5px;
+}
+
+#buttony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    background: green;
+    color: white;
+    border: none;
+    width: 71px;
+    height: 24px;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.acko {
+    background: darkred;
+    border: none;
+    width: 65px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+button:hover {
+    text-decoration: underline;
+}
+
+a.odhlasitSe {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px; /* Pøidán padding pro zlepšení vizuálního vzhledu odkazu */
+}

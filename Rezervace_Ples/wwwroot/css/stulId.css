@@ -1,0 +1,90 @@
+#plocha {
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.nadpisStolu {
+    color: darkslateblue;
+    text-align: center;
+}
+
+#tableContainer {
+    max-width: 40%;
+    min-width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+th {
+    font-weight: bolder;
+}
+
+thead {
+    background-color: #5a5096;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #7e77ad;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #a39ec5;
+}
+
+.jmeno, .prijmeni {
+    margin: 0;
+}
+
+.acko {
+    color: white;
+    text-decoration: none;
+}
+
+div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a.acko {
+    background-color: darkslateblue;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.acko:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+a.odhlasitSe {
+    background: white;
+    border-radius: 10px;
+    padding: 10px 20px; /* Pøidán padding pro zlepšení vizuálního vzhledu odkazu */
+}
+
+#containerNabidka{
+    margin-bottom: 20px;
+}
+#nabidka {
+    margin-top: 30px;
+}

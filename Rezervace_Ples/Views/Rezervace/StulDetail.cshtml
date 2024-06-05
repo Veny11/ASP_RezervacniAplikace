@@ -1,0 +1,50 @@
+﻿@model Lidi;
+
+<link rel="stylesheet" href="~/css/stulId.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/LogedStyle.css" asp-append-version="true" />
+
+<div id="plocha">
+    <h1 class="nadpisStolu">Stůl @ViewBag.stul.ID_Stul</h1>
+    <h2 class="pocetMist" style="color: darkslateblue">@ViewBag.TextVolne @ViewBag.stul.ZbyvajiciMista @ViewBag.Text z @ViewBag.stul.PocetMist</h2>
+    <div id="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Jméno</th>
+                    <th>Přijmení</th>
+                    <th></th>
+                    <th>
+                        <a asp-controller="Rezervace" asp-action="Create" asp-route-IDStolu="@ViewBag.id" class="btn btn-primary" style="background: royalblue; color: white; border: black;">Vytvořit</a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Lidi clovek in ViewBag.lidi)
+                {
+                    <tr>
+                        <td><h3 class="jmeno">@clovek.Name</h3></td>
+                        <td><h3 class="prijmeni">@clovek.Surname</h3></td>
+                        <td>
+                            <a class="acko delete" asp-controller="Rezervace" asp-action="Delete" asp-route-id="@clovek.ID_Lidi" asp-route-IDStolu="@clovek.ID_Stul" class="btn btn-primary" style="background: darkred; color: white; border: black;">Odstranit</a>
+                        </td>
+                        <td>
+                            <a class="acko upravit" asp-controller="Rezervace" asp-action="Update" asp-route-id="@clovek.ID_Lidi" asp-route-IDStolu="@clovek.ID_Stul" class="btn btn-primary" style="background: green; color: white; border: black;">Upravit</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+  
+
+    <div id="containerNabidka">
+        <div id="nabidka">
+            <a class="VyberButton" asp-controller="Rezervace" asp-action="Prizemi">Přízemí</a>
+            <a class="VyberButton" asp-controller="Rezervace" asp-action="Balkon">1. patro</a>
+        </div>
+    </div>
+</div>
+
+
+
+
