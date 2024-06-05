@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Rezervace_Ples.Models;
 using Rezervace_Ples.Models.Services;
-using Rezervace_Ples.Models.TableObjects;
 using System.Diagnostics;
 
 namespace Rezervace_Ples.Controllers

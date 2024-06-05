@@ -3,9 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Storage;
-using Rezervace_Ples.Models.Objects;
+using Rezervace_Ples.Models;
 using Rezervace_Ples.Models.Services;
-using Rezervace_Ples.Models.TableObjects;
 using System.Data;
 
 namespace Rezervace_Ples.Controllers

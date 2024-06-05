@@ -1,8 +1,6 @@
 ﻿using DocumentFormat.OpenXml.Office2010.ExcelAc;
 using Microsoft.EntityFrameworkCore;
 using Rezervace_Ples.Models.DBConnection;
-using Rezervace_Ples.Models.Objects;
-using Rezervace_Ples.Models.TableObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

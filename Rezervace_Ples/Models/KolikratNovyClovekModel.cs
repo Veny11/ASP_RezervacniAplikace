@@ -1,4 +1,4 @@
-﻿namespace Rezervace_Ples.Models.Objects
+﻿namespace Rezervace_Ples.Models
 {
     public class KolikratNovyClovekModel
     {

@@ -1,5 +1,4 @@
 ﻿using Rezervace_Ples.Models.DBConnection;
-using Rezervace_Ples.Models.TableObjects;
 
 namespace Rezervace_Ples.Models.Services
 {

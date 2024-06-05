@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rezervace_Ples.Models.TableObjects
+namespace Rezervace_Ples.Models
 {
     [Table("Table_Lidi")]
     public class Lidi

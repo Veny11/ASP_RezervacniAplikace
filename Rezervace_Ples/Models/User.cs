@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Rezervace_Ples.Models.TableObjects
+namespace Rezervace_Ples.Models
 {
     [Table("Table_Users")]
     public class User

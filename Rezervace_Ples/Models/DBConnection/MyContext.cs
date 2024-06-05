@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Rezervace_Ples.Models.TableObjects;
 namespace Rezervace_Ples.Models.DBConnection
 {
     public class MyContext : DbContext

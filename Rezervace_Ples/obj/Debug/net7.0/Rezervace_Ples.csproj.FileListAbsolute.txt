@@ -222,3 +222,4 @@ C:\Users\dalve\Desktop\Projekty\ASP_RezervacniAplikace\Rezervace_Ples\obj\Debug\
 C:\Users\dalve\Desktop\Projekty\ASP_RezervacniAplikace\Rezervace_Ples\obj\Debug\net7.0\Rezervace_Ples.pdb
 C:\Users\dalve\Desktop\Projekty\ASP_RezervacniAplikace\Rezervace_Ples\obj\Debug\net7.0\Rezervace_Ples.genruntimeconfig.cache
 C:\Users\dalve\Desktop\Projekty\ASP_RezervacniAplikace\Rezervace_Ples\obj\Debug\net7.0\ref\Rezervace_Ples.dll
+C:\Users\dalve\Desktop\Projekty\ASP_RezervacniAplikace\Rezervace_Ples\obj\Debug\net7.0\Rezervace_Ples.sourcelink.json
